@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Example
+﻿namespace Example
 {
     public class Calculator
     {
@@ -9,17 +7,23 @@ namespace Example
         {
             return a + b;
         }
+
+
+        public int divide_numbers(int A_Number_1, int B_Number_2)
+        {
+            int x = A_Number_1 / B_Number_2; Console.WriteLine("Done");
+            return x;
+        }
     }
 
     class Program
     {
         static void Main(string[] args)
         {
-            Calculator calc = new Calculator();
+            Calculator Calc = new Calculator();
 
-            int result1 = calc.AddNumbers(5, 3);
-
-            Console.WriteLine($"AddNumbers result: {result1}");
+            var res = Calc.divide_numbers(10, 0);
+            Console.WriteLine("Result");
         }
     }
 }
