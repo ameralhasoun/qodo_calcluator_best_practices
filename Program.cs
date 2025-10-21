@@ -1,16 +1,18 @@
-﻿namespace Example
+﻿﻿using System;
+
+namespace Example
 {
     public class Calculator
     {
-        // Adds two integer numbers and returns their sum
+        // First method
         public int AddNumbers(int a, int b)
         {
             return a + b;
         }
-        public int divide_numbers(int A_Number_1, int B_Number_2)
+
+        public int divide_numbers(int a, int b)
         {
-            int x = A_Number_1 / B_Number_2; Console.WriteLine("Done");
-            return x;
+            return a / b;
         }
     }
 
@@ -18,10 +20,13 @@
     {
         static void Main(string[] args)
         {
-            Calculator Calc = new Calculator();
+            Calculator calc = new Calculator();
 
-            var res = Calc.divide_numbers(10, 0);
-            Console.WriteLine("Result");
+            int result1 = calc.AddNumbers(5, 3);
+            Console.WriteLine($"AddNumbers result: {result1}");
+
+            int result2 = calc.divide_numbers(10, 0);
+            Console.WriteLine("Done");
         }
     }
 }
