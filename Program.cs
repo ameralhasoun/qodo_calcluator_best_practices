@@ -7,23 +7,15 @@
         {
             return a + b;
         }
-
-
         public int divide_numbers(int A_Number_1, int B_Number_2)
         {
-            if (B_Number_2 == 0)
-            {
-                Console.WriteLine("Error: Division by zero is not allowed.");
-                return 0;
-            }
-            int x = A_Number_1 / B_Number_2; 
-            Console.WriteLine("Done");
+            int x = A_Number_1 / B_Number_2; Console.WriteLine("Done");
             return x;
         }
     }
 
-    var result = Calc.DivideNumbers(10, 0);
-    Console.WriteLine($"DivideNumbers result: {result}");
+    class Program
+    {
         static void Main(string[] args)
         {
             Calculator Calc = new Calculator();
