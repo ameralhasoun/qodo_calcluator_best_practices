@@ -22,8 +22,8 @@
         }
     }
 
-    class Program
-    {
+    var result = Calc.DivideNumbers(10, 0);
+    Console.WriteLine($"DivideNumbers result: {result}");
         static void Main(string[] args)
         {
             Calculator Calc = new Calculator();
